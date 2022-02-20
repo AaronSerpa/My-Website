@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="program3.css" />
+  </head>
+  <body>
+    <h1>Tip Calculator</h1>
+    <p>
+      Choos from a preset service type, or enter your own percentage to
+      calculate a tip!
+    </p>
+    <img src="waiter.jpeg" alt="picture of a waiter" />
+    <input
+      onclick="switchSelected()"
+      type="radio"
+      id="excellentService"
+      name="option"
+      value="excellent"
+    />
+    <label for="excellentService">Excellent Service</label>
+    <br />
+    <input
+      onclick="switchSelected()"
+      type="radio"
+      id="goodService"
+      name="option"
+      value="good"
+    />
+    <label for="goodService">Good Service</label>
+    <br />
+    <input
+      onclick="switchSelected()"
+      type="radio"
+      id="averageService"
+      name="option"
+      value="average"
+    />
+    <label for="averageService">Average Service</label>
+    <br />
+    <input
+      onclick="switchSelected()"
+      type="radio"
+      id="badService"
+      name="option"
+      value="bad"
+    />
+    <label for="badService">Bad Service</label>
+    <br />
+    <input
+      onclick="switchSelected()"
+      type="radio"
+      id="enterOwn"
+      name="option"
+      value="custom"
+      checked
+    />
+    <label for="enterOwn">Custom Input</label>
+    <br />
+    <br />
+    <label for="totalBill">Total Bill:</label>
+    <br />
+    <input type="number" id="totalBill" name="total bill" value="0" />
+    <br />
+    <label for="percentage">Percentage:</label>
+    <br />
+    <input type="number" id="percentage" name="percentage" value="0" />
+    <label for="percentage">&#37;</label>
+    <br /><br />
+    <button onclick="btnClicked()" id="btn">Calculate Tip</button>
+    <p id="result">Result will be printed here</p>
+
+    <script src="program3.js"></script>
+    <br />
+    <a href="index.html">return home</a>
+  </body>
+</html>
